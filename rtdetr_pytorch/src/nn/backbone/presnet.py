@@ -194,7 +194,7 @@ class PResNet(nn.Module):
             self._freeze_norm(self)
 
         if pretrained:
-            state = torch.hub.load_state_dict_from_url(donwload_url[depth])
+            state = torch.hub.load_state_dict_from_url(url=donwload_url[depth], model_dir='/root/autodl-tmp',file_name='resnet50.pth')
             self.load_state_dict(state)
             print(f'Load PResNet{depth} state_dict')
             
