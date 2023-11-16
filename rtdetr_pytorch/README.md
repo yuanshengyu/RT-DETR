@@ -97,7 +97,7 @@ python tools/export_onnx.py -c configs/rtdetr/rtdetr_r18vd_6x_coco.yml -r path/t
 ```
 </details>
 
-
+torchrun --master_port=8844 tools/train.py -c configs/rtdetr/rtdetr_r50vd_6x_coco.yml -t r50vd.pth
 
 
 <details open>
