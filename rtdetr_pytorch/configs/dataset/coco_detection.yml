@@ -7,8 +7,8 @@ train_dataloader:
   type: DataLoader
   dataset: 
     type: CocoDetection
-    img_folder: ~/autodl-tmp/coco_sample/train
-    ann_file: ~/autodl-tmp/coco_sample/annotations/train.json
+    img_folder: /root/autodl-tmp/coco_sample/train
+    ann_file: /root/autodl-tmp/coco_sample/annotations/train.json
     transforms:
       type: Compose
       ops: ~
@@ -22,8 +22,8 @@ val_dataloader:
   type: DataLoader
   dataset: 
     type: CocoDetection
-    img_folder: ~/autodl-tmp/coco_sample/val
-    ann_file: ~/autodl-tmp/coco_sample/annotations/val.json
+    img_folder: /root/autodl-tmp/coco_sample/val
+    ann_file: /root/autodl-tmp/coco_sample/annotations/val.json
     transforms:
       type: Compose
       ops: ~ 
