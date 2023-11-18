@@ -1,0 +1,3 @@
+torchrun tools/train.py -c configs/rtdetr/rtdetr_r50vd_6x_coco.yml -t r50vd.pth
+
+torchrun tools/train.py -c configs/rtdetr/rtdetr_r50vd_6x_coco.yml -r /root/autodl-tmp/RT-DETR/rtdetr_pytorch/output/rtdetr_r50vd_6x_coco/checkpoint.pth
